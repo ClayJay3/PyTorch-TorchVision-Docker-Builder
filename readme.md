@@ -5,8 +5,6 @@
 This repository contains the Docker manifests for building pytorch wheels for arm64/aarch64 architecture. 
 It can be used instead of cross compilation to build the wheel for arm from amd64.
 
-> :warning: **This repository is WIP. CUDA support is not yet working** At the moment compilation with cuda support is not working. The goal however is to support this at a later stage, to be able to use it with the NVIDIA Jetson.
-
 ## Motivation
 
 There are already wheels for aarch64 pytorch for Python 3.6 by NVidia. However if you need a more recent Python version you have to compile a new wheel yourself. While it is possible to do this on arm device it takes a very long time (On my Jetson it took several days) and needs a lot of system memory which might not be available on the device. So building it on a fast amd64 is a lot faster.
